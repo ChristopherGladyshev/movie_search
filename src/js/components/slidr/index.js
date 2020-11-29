@@ -5,17 +5,8 @@
  * link  GitHub https://github.com/bchanx/slidr
  * Copyright (c) 2014 Brian Chan (bchanx.com)
  */
-(function(root, factory) {
-  // CommonJS
-  if (typeof exports === 'object') module['exports'] = factory();
 
-  // AMD module
-  else if (typeof define === 'function' && define['amd']) define(factory);
-
-  // Browser globals
-  else root['slidr'] = factory();
-
-} (this, function() {
+export const  slidr = (this, function() {
   'use strict';
 
   // Traverse [keys] in {object} to lookup a value, or null if nothing found.
@@ -1456,4 +1447,7 @@
     }
   };
 
-}));
+})();
+
+
+export default slidr;
